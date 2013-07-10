@@ -1,3 +1,7 @@
+#Fork changes
+The forked project is compatible with old Sentry version (<= 4.7.8)
+
+#Description
 A Zend Framework 2 module that lets you log exceptions, errors or whatever you wish to the Sentry service.
 
 ZendSentry is released under the New BSD License.
@@ -34,7 +38,14 @@ In your project's `composer.json` use:
 
     {   
         "require": {
-            "cloud-solutions/zend-sentry": "0.3.1"
+            "marden/zend-sentry": "0.3.1"
+        },
+        "repositories": [
+            {
+                "type": "vcs",
+                "url": "https://github.com/marden/zend-sentry"
+            }
+        ]
     }
     
 Run `php composer.phar update` to download it into your vendor folder and setup autoloading.
